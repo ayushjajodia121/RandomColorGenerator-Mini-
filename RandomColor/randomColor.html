@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="randomColor.css">
+	<title>Document</title>
+</head>
+<body>
+	<div id="content">
+		    <input type="text" placeholder="color" >
+		    <button>Generate Color</button>
+	</div>
+	
+	
+
+	<script>
+		let color=["#"];
+        let char="abcdef0123456789";
+        let colValue="";
+		let colorinput=document.querySelector("#content input");
+		let btn=document.querySelector("#content button");
+		btn.onclick=()=>{
+			for(i=0;i<6;i++)
+			{
+				color.push(char[Math.floor(Math.random()*(char.length))]);
+
+			}
+			console.log(color);
+			//colValue=color.join("");
+			console.log(color.join(""));
+			document.querySelector(" #content input").value=color.join("");
+			document.body.style.cssText="background-color: "+color.join("");
+			color=["#"];
+			console.log(color);
+		}
+	</script>
+</body>
+</html>

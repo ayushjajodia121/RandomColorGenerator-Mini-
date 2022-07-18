@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#content{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	height: 40%;
+	margin-top: 5rem;
+	margin-left: 6rem;
+	align-items: center;
+
+}
+#content input{
+	margin-bottom: 20px;
+	width: 36%;
+	padding: 1rem;
+	border: 1px solid #f1d1d1;
+	border-radius: 10px;
+}
+#content button{
+	padding: 0.5rem;
+	width: 40%;
+	border: 2px solid #f1d1d1;
+	border-radius: 22px;
+}
